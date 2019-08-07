@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="RUN_TESTS"
+	ProjectGUID="{F3192C2A-8326-3269-B165-D28FF567EAFF}"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="0"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			IntermediateDirectory="RUN_TESTS.dir\Debug"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				AdditionalIncludeDirectories="C:\Projects\MyProjects\zlib\zlib-1.2.11-VC2008-MT-32-SRC-CMAKE-STATIC-CDECL-C;"
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\ctest.exe --force-new-ctest-process -C $(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			IntermediateDirectory="RUN_TESTS.dir\Release"
+			ConfigurationType="10"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				AdditionalIncludeDirectories="C:\Projects\MyProjects\zlib\zlib-1.2.11-VC2008-MT-32-SRC-CMAKE-STATIC-CDECL-C;"
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(InputName).tlb"
+				OutputDirectory="$(IntDir)"
+				HeaderFileName="$(InputName).h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="$(InputName)_i.c"
+				ProxyFileName="$(InputName)_p.c"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="C:\OpenTools\cmake-3.7.2\cmake-3.7.2-win64-x64\bin\ctest.exe --force-new-ctest-process -C $(ConfigurationName)&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="CMake Rules"
+			>
+			<File
+				RelativePath="C:\Projects\MyProjects\zlib\zlib-1.2.11-VC2008-MT-32-SRC-CMAKE-STATIC-CDECL-C\CMakeFiles\RUN_TESTS_force.rule"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description=" "
+						CommandLine="cd .&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Projects\MyProjects\zlib\zlib-1.2.11-VC2008-MT-32-SRC-CMAKE-STATIC-CDECL-C\CMakeFiles\RUN_TESTS_force.rule"
+						Outputs="C:\Projects\MyProjects\zlib\zlib-1.2.11-VC2008-MT-32-SRC-CMAKE-STATIC-CDECL-C\CMakeFiles\RUN_TESTS_force"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description=" "
+						CommandLine="cd .&#x0D;&#x0A;if errorlevel 1 goto :VCReportError&#x0D;&#x0A;"
+						AdditionalDependencies="C:\Projects\MyProjects\zlib\zlib-1.2.11-VC2008-MT-32-SRC-CMAKE-STATIC-CDECL-C\CMakeFiles\RUN_TESTS_force.rule"
+						Outputs="C:\Projects\MyProjects\zlib\zlib-1.2.11-VC2008-MT-32-SRC-CMAKE-STATIC-CDECL-C\CMakeFiles\RUN_TESTS_force"
+					/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
